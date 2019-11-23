@@ -16,5 +16,5 @@ jobs:
     - name: Test
       run: ./gradlew test
     - name: Publish with Gradle
-      run: ./gradlew -Pgpr.user='AndrewX192' -Pgpr.key={{ secrets.GITHUB_TOKEN }} :ipcd-lib:publish
+      run: ./gradlew -Pgpr.user='AndrewX192' -Pgpr.key=${{ secrets.GITHUB_TOKEN }} :ipcd-lib:publish
 
